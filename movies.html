@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Big Willy Movies
+    </title>
+    <link rel="shortcut icon" href="img/weblogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
+integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="grid.css">
+<link rel="stylesheet" href="movie.css">
+</head>
+<body>
+    <div class="progress">
+        <div class="progress-bar" id="scroll-bar"></div>
+    </div>
+
+    <div class="nav-wrapper">
+        <div class="container">
+            
+            <div class="nav">
+                <a href="#" class="logo">
+                 <i class='bx bx-movie-play bx-tada main-color' ></i> Big <span class="main-color">Willy</span> Movies
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Genres</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="#">About</a></li>
+                    <div class="icon">
+                        <li><a href="srch.html"><i class='bx bx-search-alt' style='color: aqua'  ></i></a></li>
+                    </div>
+                    <li>  
+                        <div class="toggle">
+                            <i class="bx bx-moon toggle-icon"></i>
+                            <i class="bx bx-sun toggle-icon"></i>
+
+                        <div class="toggle-ball"></div>
+                    </li>
+                </ul>
+                
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        Note: Change file extension to .mp4 before playing movie or Play With VLC Media Player
+    </div>
+   <div class="device">
+    <li>
+        <!-- input tag  -->
+        <input id="searchbar" onkeyup="search_movies()"
+            type="text" name="search" placeholder="Search Movies.."
+        >
+    </li> 
+   </div>
+
+    <section class="trending container" id="trending">
+        <div class="heading">
+            <i class='bx bx-movie-play bx-fade-down' ></i>
+            <h2>Movies</h2>
+        </div>
+        <!-- ordered list -->
+        <ol class="list">
+            <div class="new-content">
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/220px-Radhe_Shyam.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Radhe Shyam</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/deep.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Deep Water</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Deep Water (2022).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/restless.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Restless</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/whitesnake.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>White Snake</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/White Snake (2019) .mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/whitesnake2.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>White Snake: The Tribulation Of The Green Snake</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/White Snake II The Tribulation of the Green Snake (2021).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/boss baby.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>The Boss Baby</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/The_Boss_Baby_2017_(2017)_BluRay_high_(fzmovies.net)_a191be670344fdc085468881de30b3e8.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/boss baby 2.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>The Boss Baby 2: Family Business</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/The Boss Baby Family Business (2021) .mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="destroy all aliens.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Ben 10: Destroy All Aliens</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="Ben 10 Destroy All Aliens.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/strange magic.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Strange Magic</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Strange_Magic_(2015)_BDRip_high_(fzmovies.net)_feb77faa4d8cf8c2f54679128fd159df.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/red notice.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Red Notice</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Red Notice (2021) .mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/wonder.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Wonder-Woman</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Wonder_Woman_2017_(2017)_BluRay_high_(fzmovies.net)_f9481b991b55063b858e55f551d653db.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies">  
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/W84.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Wonder-Woman 1984</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Wonder Woman 1984 (2020).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/lion.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>The Lion King</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/The_Lion_King_2019_(2019)_BluRay_high_(fzmovies.net)_81a7b7bcaf92190d58869821033247ed.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/fairy.jpeg" alt="">
+                                <div class="box-text">
+                                    <h2> A Fairy Tale After All</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/A Fairy Tale After All (2022).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/tu.png" alt="">
+                                <div class="box-text">
+                                    <h2>Turning Red</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Turning Red (2022).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/priviledge.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> The Privilege</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/h.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Restless</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/alaadin.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Aladdin</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Aladdin_(2020)_BRRip_.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+                
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/croods2.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>The Croods: A New Age</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/The Croods A New Age (2020).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/croods.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>The Croods</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/The_Croods_ 2013_(2013)_BluRay_high_(fzmovies.net)_d8ede787ce0762f85bbfc8721b71147c.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/SPI.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Spiderman: No Way Home</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Spider-Man No Way Home (2021).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/darkap.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Justice League: Dark Apokolips War</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Justice League Dark Apokolips War (2020).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+                
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/Looop_Lapeta.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Looop Lapeta</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/blackwidow_lob_crd_06.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Black Widow</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Black.Widow.2021.480p.WEBRip.x265  .mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/captainmarvel_lob_crd_06.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Captain Marvel</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Captain_Marvel_(2019)_BRRip_high_(fzmovies.net)_652a3f3d7ac02b4df0252741e759ee36.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/mortal kombat.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Mortal Kombat</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Mortal Kombat (2021).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/NEWYK.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Miraculous_New York: United Heroez</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Miraculous_World_New_York_-_United_HeroeZ_2020.mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/x (2).jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Pada: The Movie</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/transformers.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Transformers</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Transformers_BRRip_high_(fzmovies.net)_af730225f943e5abd80ac52bf35b1a8f.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/trans dark of the moon.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Transformers: Dark Of The Moon </h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Transformers.Dark.Of.The.Moon_high_(fzmovies.net)_b8eb6d75e045ed2188580209c959c9b7.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/trans age of extinction.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Transformers: Age Of Extinction</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Transformers_Age_of_Extinction__(2014)_BRRip_high_(fzmovies.net)_99878472a0545dbc2dd9213cea02e3fd.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/transformers_revenge_of_the_fallen_ver9.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Transformers: Revenge Of The Fallen</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Transformers.Revenge.of.the.Fallen.BluRay_high_(fzmovies.net)_7773b48c93b05100054e409eb3219279 (1).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/transformers last knight.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Transformers: The Last Knight</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Transformers_The_Last_Knight_2017_(2017)_BluRay_high_(fzmovies.net)_f23b3fe09d858ff3e9aa3ed6fca3ea32.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/tinder.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> The Tinder Swindler</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/The Tinder Swindler (2022).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/kong.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Kong: Skull Island</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="kong.html" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/hellboy.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>HellBoy</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Hellboy (2019).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/avengers.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Avengers</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./death/Deathstroke Knights & Dragons (2020) (NetNaija.com).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/avengers infinity.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Avengers: Infinity War</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Avengers_Infinity_War_2018_(2018)_BluRay_high_(fzmovies.net)_307cd0f29ee5cb2c70cef0238682ca40.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/avengersendgame_lob_crd_05.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Avengers: EndGame</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Avengers_-_Endgame_(2019)_BRRip_high_(fzmovies.net)_5ab3dc905b40c6311078e61f1afddb75.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/iron man.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Iron Man</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Iron_Man_(2008)_BluRay_high_(fzmovies.net)_a5d0d80016cce84f267e2e36a52408af.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/iron man 2.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Iron Man 2</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Iron_Man_2_(2010)_BluRay_high_(fzmovies.net)_f70740207890a73d4dc33fe6a4b630c8.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/iron man 3.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Iron Man 3</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Iron_Man_3_(2013)_BluRay_high_(fzmovies.net)_8c616ff62974d492edc87fa1a4e8c901.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+
+
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/winter soldier.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Captain America: The Winter Soldier</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Captain America The Winter Soldier (2014) - BluRay_high_(coolmoviez.co).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/tmnt.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Teenage Mutant Ninja Turtles</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./death/Deathstroke Knights & Dragons (2020) (NetNaija.com).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/hiddnwrld.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>How To Train Your Dragon: The Hidden World</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/How_to_Train_Your_Dragon_The_Hidden_World_(2019)_WEBRip_high_(fzmovies.net)_2506148ade19720f35a295bad97f8f7c.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/F2.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>How To Train Your Dragon 2</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/How_to_Train_Your_Dragon_2_(2014)_BluRay_high_(fzmovies.net)_992db9aa64cd0a37ce09a43effd2c05e.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/train.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>How To Train Your Dragon</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/How_to_Train_Your_Dragon_(2010)_BluRay_high_(fzmovies.net)_89cb37323223dbf1a10fca5612b00066.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/fireheart-hollywood-movie.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Fire Heart</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./death/Deathstroke Knights & Dragons (2020) (NetNaija.com).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/greenlan.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Green Lantern: Emerald Knights</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Green_Lantern_Emerald_Knights_(2011)_BluRay_high_(fzmovies.net)_c2c9e10622720876f880e3b183d66127 - Copy.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/texas.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Texas Chainsaw Massacre</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/monsterhunter.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Monster Hunter</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Monster Hunter (2020).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/spongebob.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>SpongeBob Squarepants The Movie: Sponge On The Run</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/The SpongeBob Movie Sponge on the Run (2020).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/sonic.png" alt="">
+                                <div class="box-text">
+                                    <h2> Sonic: The Hedgehog</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Sonic_the_Hedgehog_(2020)_BluRay_high_(fzmovies.net)_d33556cec0199912f74a74921b958c75 - Copy.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/BAT.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> The Batman</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/Aquaman.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Aquaman</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Aquaman_(2018)_BluRay_high_(fzmovies.net)_c882e37162d5576d83bf59e9d5a50be0-1.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/bigfootfamily.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Big Foot Family</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/Black_Panther_OS_Vol_1_2.png" alt="">
+                                <div class="box-text">
+                                    <h2> Black Panther</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Black_Panther_(2018)_CAMRip_high_(fzmovies.net).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/transform.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Hotel Transylvania 4: Transformania</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/hotel3.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Hotel Transylvania 3: Summer Vacation</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Hotel_Transylvania_3_Summer_Vacation_(2018)_BluRay_high_(fzmovies.net)_a843b1c16bfcaa58c59f24974a201423 - Copy.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/hotel2.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Hotel Transylvania 2</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/hotel1.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Hotel Transylvania</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/Encanto.jpeg" alt="">
+                                <div class="box-text">
+                                    <h2> Encanto</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Encanto (2021).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/t and jerryu.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Tom And Jerry (2021)</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Tom and Jerry (2021).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/dreambuild.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Dream Builders</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Dreambuilders_(2020)_BRRip_high_(fzmovies.net)_277f7ee6522b740c4121d5f2b3e6eec0-1.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/unbound.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Superman: Unbound</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Superman_Unbound_(2013)_BluRay_high_(fzmovies.net)_3bc4ca8c774b03865675268fb96ca21e.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/batman death.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Batman: Death In A Family</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Batman Death in a family.mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/death.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Deathstroke: Knights And Dragons</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Deathstroke Knights & Dragons (2020).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/amze(op).jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Amazing Spiderman </h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./death/Deathstroke Knights & Dragons (2020) (NetNaija.com).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/amaze2.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Amazing Spiderman 2</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/The_Amazing_Spider-Man_2_(2014)_BluRay_high_(fzmovies.net)_d993167b3ad570885a6357653b9a9611.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/Spider-Man-FarFromHome-rating.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Spider-Man: Far From Home</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/SPIDERMAN FAR FROM HOME.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/bumble.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Bumblebee</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Bumblebee_(2018)_BRRip_high_(fzmovies.net)_ae1d62c449aebe0e39de2da3593a791d.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/cinderella.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Cinderella</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Cinderella_(2015)_BluRay_high_(fzmovies.net)_f2900b0163e32666981908a0dfd1f5db.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/elektro.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Elektra</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./death/Deathstroke Knights & Dragons (2020) (NetNaija.com).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/epic.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Epic</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/intoverse.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Spider_Man: Into The Spider-verse</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Spider_Man_Into_the_Spider_Verse__(2018)_BluRay_high_(fzmovies.net)_385f92b81a3bed12700fcb8d03b051d1.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/journey2.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Journey 2: The Mysterious Island</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./death/Deathstroke Knights & Dragons (2020) (NetNaija.com).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/Jumanji_poster.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Jumanji</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Jumanji_1995_BRRip_high_(fzmovies.net)_07d051a291723b995ad337faa9c96258.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/jumanji2.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Jumanji: The Next Level</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Jumanji_The_Next_Level_(2019)_BluRay_high_(fzmovies.net)_43def633cb71d24ebde5ed7226707921.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/kungfu1.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Kung Fu Panda</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Kung_Fu_Panda_(2008)_BDRip_high_(fzmovies.net)_7005ffe791f538cfd2706ad6d1489958 (1).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/kungfu2.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Kung Fu Panda 2</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Kung_Fu_Panda_2_(2011)_BluRay_high_(fzmovies.net)_cc0ed31a2023c3c94de9c1f70683e0c8 - Copy - Copy.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/kungfu3.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Kung Fu Panda 3</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Kung_Fu_Panda_3_(2016)_BluRay_high_(fzmovies.net)_b84459926bbde4f01306932a69060cff.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/drnest.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Dragon Nest Warrior's Dawn</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Dragon.Nest.Warriors.Dawn.2014.720p.BluRay.x264.YIFY.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/throne.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Throne Of Elves</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Throne_of_Elves_2016_(2016)_BRRip_high_(fzmovies.net)_dd5bd99a539f465d0f7ad93887992785.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/MAN.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Man Of Steel</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Man_of_Steel_(2013)_BluRay_high_(fzmovies.net)_33ec0c4a80ee6121548650bf6dc40731.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+               
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/legoblack.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Lego: Black Panther</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./death/Deathstroke Knights & Dragons (2020) (NetNaija.com).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/dawn of racers.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Dragons: Dawn Of Dragon Racers</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./death/Deathstroke Knights & Dragons (2020) (NetNaija.com).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/nezha.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Nezha</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Ne Zha (2019).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/nehza2.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>New Gods: Nezha Reborn</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/New Gods Nezha Reborn (2021).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/sing.jpeg" alt="">
+                                <div class="box-text">
+                                    <h2>Sing 2</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Sing 2 (2021).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+
+                
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="New folder/shazam.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Shazam</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Shazam_(2019)_BluRay_high_(fzmovies.net)_2c8916e93b4a0cf14045e873751df147.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/x.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>X-men</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./death/Deathstroke Knights & Dragons (2020) (NetNaija.com).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/Toy-Story-4.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Toy Story 4</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Toy_Story_4_(2019)_HDRip_high_(fzmovies.net).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/secretomni.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Secret Of The Omnitrix</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Ben_10_Secret_of_the_Omnitrix_(2007)_WEB-DL_high_(fzmovies.net)_dc16f7ca9f0-1.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/Superman.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Superman</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./death/Ben_10_Secret_of_the_Omnitrix_(2007)_WEB-DL_high_(fzmovies.net)_dc16f7ca9f0-1.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/supeman2.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Superman II</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Superman_II_(1980)_BluRay_high_(fzmovies.net)_ce64cb4509e477714de8a888b72f198b.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/superman3.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Superman III</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Superman_III_(1983)_BluRay_high_(fzmovies.net)_2fa88b771a7ed85cdb85ca9e6407b09c.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/descendants.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Descendants</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Descendants_(2015)_WEBRip_high_(fzmovies.net)_956ad72aad2489fa2d78028e4f43ce17.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/descendants2.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Descendants 2</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Descendants_2_(2017)_DVDRip_high_(fzmovies.net)_eadd64816ef71f6f8360df8e88943ce4.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/descendants3.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Descendants 3</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Descendants_3_(2019)_DVDRip_high_(fzmovies.net)_1b51d0c81f1720decf01562651e5f11d.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/lion king.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>The Lion King</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./death/Ben_10_Secret_of_the_Omnitrix_(2007)_WEB-DL_high_(fzmovies.net)_dc16f7ca9f0-1.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/injustice.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Injustice</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Injustice (2021).mkv" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/incredibles.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>The Incredibles</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./death/Deathstroke Knights & Dragons (2020) (NetNaija.com).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+                
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/madagascar.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Madagascar</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Madagascar.2005.BluRay_high_(fzmovies.net)_ec2ec4f61a8766653fc3844cbd74fb77.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/Madagascar2poster.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Madagascar 2: Escape2Africa</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Madagascar.Escape.2.Africa.2008.BluRay_high_(fzmovies.net)_dce19657d34a651430da2514b9708349.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/madagascar3.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Madagascar 3: Europe's Most Wanted</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Madagascar_3_Europes_Most_Wanted_(2012)_BluRay_high_(fzmovies.net)_8eea9d92b69bf354578f2b8736345239.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/penguins madagascar.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>The Penguins Of Madagascar</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/zootopia.jpg" alt="">
+                                <div class="box-text">
+                                    <h2> Zootopia</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/Zootopia_(2016)_WEBRip_high_(fzmovies.net)_46219b786b3978ea9def64d4d35f7a8c.mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="blk flsh mv/walle.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Wall-E</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./movies/2008_-_Wall-E.avi" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/ice age.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Ice Age</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/nut job.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>The Nut Job</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/rescue.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Un Rescate De Huevitos</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="#" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="movies"> 
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="img/zambezia.jpg" alt="">
+                                <div class="box-text">
+                                    <h2>Zambezia</h2><br>
+                                
+                                    <div class="rating-download">
+                                        <div class="rating">
+                                            <i class='bx bxs-time'></i><span>120 Mins</span>
+                                            </div>
+                                            <a href="./death/Deathstroke Knights & Dragons (2020) (NetNaija.com).mp4" class="box-btn"><i class='bx bxs-download bx-flashing' ></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </ul> 
+
+            </div>
+        </ol>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="content">
+                        <a href="#" class="logo">
+                            <i class='bx bx-movie-play bx-tada main-color' ></i> Big <span class="main-color">Willy</span> Movies
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus
+                            eius. Deserunt non odis , cum vero reprehenderit laundantium odio vitae
+                            autem quam, incidunt molestias ratione mollitia accusantium, facere ab
+                            suscipit.
+                        </p>
+                        <div class="social-list">
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="content">
+                                <p><b>Big Willy Movies</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">My Profile</a></li>
+                                    <li><a href="pricing.html">Pricing Plans</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="content">
+                                <div class="content">
+                                    <p><b>Browse</b></p>
+                                    <ul class="footer-menu">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">My Profile</a></li>
+                                        <li><a href="pricing.html">Pricing Plans</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="content">
+                                <div class="content">
+                                    <p><b>Help</b></p>
+                                    <ul class="footer-menu">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">My Profile</a></li>
+                                        <li><a href="pricing.html">Pricing Plans</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="content">
+                                <div class="content">
+                                    <p><b>Download App</b></p>
+                                    <ul class="footer-menu">
+                                        <li>
+                                            <a href="APP.html">
+                                                <img src="img/google play.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="APP.html">
+                                                <img src="img/appstore.png" alt="">
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="content">
+                                <div class="content">
+                                   <a href="#"> <p><b>Subscribe To <i class='bx bxl-youtube' style='color: red' ></i> Youtube Channel</b></p></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+
+    <!-- COPYRIGHT SECTION -->
+    <div class="copyright">
+        <p>&#169; Copyright 2021 <a href="https://www.youtube.com/channel/UCnNgtK4tGlWcceXVzoyTg8Q" target="_blank">Tuat Tran Anh</a>
+    </div>
+    <!-- END COPYRIGHT SECTION -->
+
+    <!-- linking javascript -->
+    <script src="movie.js"></script>
+</body>
+</html>

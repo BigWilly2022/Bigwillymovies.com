@@ -1,0 +1,54 @@
+:root{
+    --main-color: aqua;
+    --body-bg: #181616;
+    --box-bg: #221f1f;
+    --text-color: #ffffff;
+
+    --nav-height: 60px;
+    --space-top: 30px;
+}
+ 
+* {
+    padding: 0px;
+    margin: 20px;
+    box-sizing: border-box;
+
+}
+ 
+html {
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    padding-top: var(--nav-height);
+}
+
+
+.text {
+    color: red;
+}
+
+.text h1 {
+    color: aqua;
+}
+.text h2 {
+    padding-left: 100px;
+    color: red;
+}
+
+
+@media only screen and (max-width: 850px) {
+
+    .text h1 {
+        font-size: 15px;
+    }
+
+    .text h2 {
+        font-size: 10px;
+        margin-top: 25px;
+        padding-left: 0%;
+    }
+}
